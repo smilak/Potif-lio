@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STÉFANO MILAK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="blue">S</span>
+            <span class="red">T</span>
+            <span class="yellow">E</span>
+            <span class="blue">F</span>
+            <span class="green">A</span>
+            <span class="red">N</span>
+            <span class="yellow">O</span>
+           
+           
+        </h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar um novo profissional..." >
+            <button class="search-button" onclick="showAlert()">Pesquisar</button>
+        </div>
+        <div class="buttons">
+            
+                <button class="tooltip">Pesquisa Google
+                    <div class="tooltip-text">Habilidades Técnicas:
+
+                        - Desenvolvimento Web: Conhecimeto básico em HTML, CSS e JavaScript.
+                        - Banco de Dados: Conhecimento básico em gerenciamento e manipulação de dados em banco de dados.
+                        - Analise de dados: conhecimento em tratamento e analise de dados.
+                        - Internet das Coisas (IoT), industria 4.0 e sistema IOT home. 
+                        - Automação de Processos de trabalho acelerando e otimzando sistemas de trabalho. 
+                    </div>
+                </button>
+            </a>
+           
+                <button class="tooltip">Estou com sorte
+                    <div class="tooltip-text">
+                        Nome: Stéfano Milak Neto<br>
+                        End: Rua Carlos de Laet, 1615<br>
+                        Hauer - Curitiba - Paraná<br>
+                        email: smilakneto@gmail.com<br>
+                        cel: (41)99687-1831
+
+
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/stéfano-milak-neto-217408196" target="_blank">
+               <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/smilak/Teste" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/554196871831" target="_blank">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="custom-alert" class="alert hidden">
+        NÃO PERCA TEMPO PROCURANDO...<br>
+        A SUA ÚNICA E MELHOR ESCOLHA PARA A ESSA VAGA É O STÉFANO!!! 
+    </div>
+
+    <script>
+        function showAlert() {
+            const alertDiv = document.getElementById('custom-alert');
+            alertDiv.classList.remove('hidden');
+            setTimeout(() => {
+                alertDiv.classList.add('hidden');
+            }, 5000); // Esconde o alerta após 5 segundos
+        }
+        
+    </script>
+</body>
+</html>
